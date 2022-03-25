@@ -8,6 +8,7 @@ import EachMovie from "./EachMovie";
 const App = () => {
   const [movie, setMovie] = useState({});
   const [search, setSearch] = useState("");
+  const classes = makeStyles():
   // useEffect(async () => {
   //   const movies = await axios.get(
   //     `http://www.omdbapi.com/?i=tt3896198&apikey=416bc9c6=${
