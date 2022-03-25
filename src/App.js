@@ -10,15 +10,7 @@ import {Typography, Container, Grid, Card, CardMedia, CardContent} from '@materi
 const App = () => {
   const [movie, setMovie] = useState([]);
   const [search, setSearch] = useState("");
-  const classes = useStyles():
-
-
-
-  
-
-  
-
-  
+  const classes = useStyles()
 
   const loadData = async () => {
     const response = await fetch(
@@ -52,7 +44,9 @@ const App = () => {
                  movie.map(({Poster, Title}) => (
                   <Grid item key = {Title} xs = {12} sm ={6} md = {4}>
                     <Card className = {classes.card}>
-                      <CardMedia className = {classes.cardMedia} image = `${Poster}`title = 'Image Title'/>
+                      {/* <CardMedia className = {classes.cardMedia} image = `${Poster}`title = 'Image Title'/>
+                       */}
+                       <img className = {classes.cardMedia} src = {Poster} alt = 'title'/>
                          <CardContent className = {classes.cardContent}>
                            <Typography variant = 'h5' gutterBottom>
                              {Title}
@@ -63,33 +57,10 @@ const App = () => {
                  ))
               
               }
-              
-              
-              
-      </Grid>
-            
-            
+ 
+      </Grid> 
     </Container>
    </main>
-      
-      
-   
-
-
-      
-        
-      
-        
-          
-            
-            
-            
-          
-        
-     
-      
-        
-
 
       <Footer />
     </>
