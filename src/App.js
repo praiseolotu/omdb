@@ -19,7 +19,7 @@ const App = () => {
 
   const loadData = async () => {
     const response = await fetch(
-      "http://www.omdbapi.com/?s=movies&apikey=416bc9c6"
+      "https://www.omdbapi.com/?s=movies&apikey=416bc9c6"
     );
     const data = await response.json();
     setMovie(data);
