@@ -2,14 +2,14 @@ import React, { useState, useEffect } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import EachMovie from "./EachMovie";
-import makeStyles from './styles'
+import useStyles from './styles'
 // import axios from "axios";
 // import _ from "lodash";
 
 const App = () => {
   const [movie, setMovie] = useState({});
   const [search, setSearch] = useState("");
-  const classes = makeStyles():
+  const classes = useStyles():
   // useEffect(async () => {
   //   const movies = await axios.get(
   //     `http://www.omdbapi.com/?i=tt3896198&apikey=416bc9c6=${
