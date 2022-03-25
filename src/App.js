@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import EachMovie from "./EachMovie";
+import makeStyles from './styles'
 // import axios from "axios";
 // import _ from "lodash";
 
