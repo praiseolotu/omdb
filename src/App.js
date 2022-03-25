@@ -8,7 +8,7 @@ import {Typography, Container, Grid, Card, CardMedia, CardContent} from '@materi
 
 
 const App = () => {
-  const [movie, setMovie] = useState({});
+  const [movie, setMovie] = useState([]);
   const [search, setSearch] = useState("");
   const classes = useStyles():
 
