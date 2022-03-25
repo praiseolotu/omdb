@@ -41,7 +41,7 @@ const App = () => {
            <Typography variant = 'h3' align = 'left' color = 'textPrimary' gutterBottom>
              Search:
            </Typography>
-          <input type = 'text' value = {search} onChange = {(e) => setSearch(e.target.value)} placeholder = 'spiderman'/>
+          <input type = 'text' value = {search} onChange = {(e) => setSearch(e.target.value)} placeholder = 'spiderman' style = {{width : '100%, borderRadius: ''25%''}}/>
 
          </Container>
     
