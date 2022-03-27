@@ -10,7 +10,7 @@ const Header = () => {
         <Toolbar>
           <PhotoCamera />
           <Typography variant="h6" style={{ marginLeft: "20px" }}>
-            OMDB
+            OMDB Movies
           </Typography>
         </Toolbar>
       </AppBar>
