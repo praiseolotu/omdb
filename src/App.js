@@ -12,7 +12,11 @@ const App = () => {
   const [error, setError] = useState("");
   const loadData = async () => {
     const response = await fetch(
-      "http://www.omdbapi.com/?i=tt3896198&apikey=416bc9c6&s=spiderman"
+<<<<<<< HEAD
+      "http://www.omdbapi.com/?s=spiderman&apikey=416bc9c6"
+=======
+      "http://www.omdbapi.com/?s=movies&apikey=416bc9c6"
+>>>>>>> 3dbcecd144f2d7e73be2474a2b88e98339669909
     );
     const data = await response.json();
     setData(data.Search);
@@ -30,7 +34,7 @@ const App = () => {
       return setError("Please Enter a valid text");
     }
     const response = await fetch(
-      `http://www.omdbapi.com/?i=tt3896198&apikey=416bc9c6&s=${search}`
+      `http://www.omdbapi.com/?s=${search}&apikey=416bc9c6&`
     );
     const data = await response.json();
     if (!data.Search) {
