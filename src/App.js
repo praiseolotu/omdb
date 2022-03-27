@@ -12,11 +12,7 @@ const App = () => {
   const [error, setError] = useState("");
   const loadData = async () => {
     const response = await fetch(
-<<<<<<< HEAD
       "http://www.omdbapi.com/?s=spiderman&apikey=416bc9c6"
-=======
-      "http://www.omdbapi.com/?s=movies&apikey=416bc9c6"
->>>>>>> 3dbcecd144f2d7e73be2474a2b88e98339669909
     );
     const data = await response.json();
     setData(data.Search);
